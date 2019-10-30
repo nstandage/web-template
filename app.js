@@ -1,3 +1,13 @@
+
+require("dotenv").config();
+const https = require('https');
+const http = require('http');
+
+const port_http = process.env.PORT_HTTP || 80;
+const port_https = process.env.PORT_HTTPS || 443;
+
+const path = "path to public folder";
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
